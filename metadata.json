@@ -1,6 +1,6 @@
 {
-  "name": "Global CBT Platform",
-  "description": "A secure, standardized Computer-Based Testing application featuring lockdown capabilities, timed assessments, and comprehensive post-exam analytics.",
+  "name": "Singing Birds Association",
+  "description": "A modern community platform for bird lovers, canary breeders, and avian hobbyists in Kaduna. Includes a media center, galleries, and admin dashboard.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
