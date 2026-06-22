@@ -114,6 +114,11 @@ const Members = () => {
         changed = true;
       }
 
+      if (!updated.some((m: Member) => m.name.includes("Nazifi Ya'u"))) {
+        updated.push({ id: '0-15', name: "Nazifi Ya'u", role: "Member", type: 'general', image: "https://i.ibb.co/nsft7W4b/12c4b8d0-7d0f-4c32-a459-f7e74b095d50.jpg" });
+        changed = true;
+      }
+
       if (changed) {
         setMembersList(updated);
         localStorage.setItem('sba_members', JSON.stringify(updated));
@@ -137,7 +142,8 @@ const Members = () => {
         { id: '0-11', name: "Isah Abdullahi", role: "Member", type: 'general', image: "https://i.ibb.co/Dfj1TfbM/eba9d9ad-78f2-421e-9cf1-1de28973a287.jpg" },
         { id: '0-12', name: "Idris Isma'il", role: "Member", type: 'general', image: "https://i.ibb.co/sJHbhnTy/bce29db4-ee8a-4659-b547-fe7e97666a02.jpg" },
         { id: '0-13', name: "Engr. George Ado", role: "Member", type: 'general', image: "https://i.ibb.co/Q3JjSmsw/0218bd58-65a5-4460-aa96-79b9b8207a34.jpg" },
-        { id: '0-14', name: "Abdullahi Muhammad Ciroma", role: "Treasurer", type: 'executive', image: "https://i.ibb.co/B5HVyxL2/5188e667-db17-4b34-b488-feec8cc8a8c3-1.jpg" }
+        { id: '0-14', name: "Abdullahi Muhammad Ciroma", role: "Treasurer", type: 'executive', image: "https://i.ibb.co/B5HVyxL2/5188e667-db17-4b34-b488-feec8cc8a8c3-1.jpg" },
+        { id: '0-15', name: "Nazifi Ya'u", role: "Member", type: 'general', image: "https://i.ibb.co/nsft7W4b/12c4b8d0-7d0f-4c32-a459-f7e74b095d50.jpg" }
       ];
       setMembersList(defaultMembers);
       localStorage.setItem('sba_members', JSON.stringify(defaultMembers));
